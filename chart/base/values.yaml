@@ -48,3 +48,6 @@ partOf: inventory
 connectsTo: inventory-svc
 
 runtime: nodejs
+
+serviceMesh:
+  sidecar: true
