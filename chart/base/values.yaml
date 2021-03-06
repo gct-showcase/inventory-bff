@@ -45,7 +45,8 @@ vcsInfo:
 
 partOf: inventory
 
-connectsTo: inventory-svc
+connectsTo:
+  - inventory-svc
 
 runtime: nodejs
 
