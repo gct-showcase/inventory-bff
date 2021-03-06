@@ -68,7 +68,7 @@ spec:
             {{- if .Values.connectsTo }}
             - name: SERVICE_URL
               value: {{ printf "%s:80" .Values.connectsTo | quote }}
-            {{ end }}
+            {{- end }}
           envFrom:
             - configMapRef:
                 name: {{ default "jaeger-config" .Values.jaegerConfigName }}
